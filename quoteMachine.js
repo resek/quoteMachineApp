@@ -13,7 +13,7 @@ function newQuoteRequest() {
             newQuote = responseObject.quote.body;
             newAuthor = responseObject.quote.author;                              
         }
-        document.getElementById("quote").innerHTML = newQuote;
+        document.getElementById("quote").innerHTML = "\"" + newQuote + "\"";
         document.getElementById("author").innerHTML = newAuthor;
     }
     xhr.open ("GET", "https://favqs.com/api/qotd", true);

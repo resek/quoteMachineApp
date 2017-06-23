@@ -1,16 +1,23 @@
 body {
-    background-color: #1a9d9a
-}
-
-div {
-    width: 600px;
-    height: 200px;
-    background: #1a9d9a;
-    margin: 150px auto 0;
+    background-color: #446787;
+    font-family: 'Pacifico', cursive;
 }
 
 p {
-    font-size: 200%;
-    text-align: center;
+    font-size: 250%;    
     color: white;
+}
+
+#quoteAuthor {
+    width: 700px;
+    height: auto;
+    background: #446787;
+    margin: 100px auto 60px;
+    text-align: center;
+}
+
+#author {
+    font-size: 170%;
+    text-align: right;
+    font-style: italic;
 }
