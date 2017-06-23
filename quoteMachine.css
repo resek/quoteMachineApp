@@ -1,0 +1,16 @@
+body {
+    background-color: #1a9d9a
+}
+
+div {
+    width: 600px;
+    height: 200px;
+    background: #1a9d9a;
+    margin: 150px auto 0;
+}
+
+p {
+    font-size: 200%;
+    text-align: center;
+    color: white;
+}
