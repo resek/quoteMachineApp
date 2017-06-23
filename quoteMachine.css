@@ -4,7 +4,26 @@ body {
 }
 
 p {
-    font-size: 250%;    
+    font-size: 230%;    
+    color: white;
+}
+
+button {
+    background-color:white;
+    font-size: 160%;
+    border-radius: 200px;
+    padding: 10px 30px;
+    border: none;
+    color: #446787;;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #e67e22;
     color: white;
 }
 
@@ -12,12 +31,16 @@ p {
     width: 700px;
     height: auto;
     background: #446787;
-    margin: 100px auto 60px;
+    margin: 80px auto 60px;
     text-align: center;
 }
 
 #author {
-    font-size: 170%;
+    font-size: 150%;
     text-align: right;
     font-style: italic;
+}
+
+.animated {
+    animation-duration: 1.5s;
 }

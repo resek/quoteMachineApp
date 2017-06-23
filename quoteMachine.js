@@ -1,7 +1,11 @@
 var newQuoteButton = document.getElementById("newQuoteButton");
+var author = document.getElementById("author");
+var quote = document.getElementById("quote");
 
 newQuoteRequest();
+
 newQuoteButton.addEventListener("click", newQuoteRequest, false);
+newQuoteButton.addEventListener("click", addAnimatedClass, false);
 
 function newQuoteRequest() {
     var xhr = new XMLHttpRequest();
@@ -13,11 +17,16 @@ function newQuoteRequest() {
             newQuote = responseObject.quote.body;
             newAuthor = responseObject.quote.author;                              
         }
-        document.getElementById("quote").innerHTML = "\"" + newQuote + "\"";
-        document.getElementById("author").innerHTML = newAuthor;
+        quote.innerHTML = "\"" + newQuote + "\"";
+        author.innerHTML = newAuthor;        
     }
     xhr.open ("GET", "https://favqs.com/api/qotd", true);
     xhr.send(null);
+}
+
+function addAnimatedClass() {
+    quote.classList.add("animated", "fadeInLeft");
+    author.classList.add("animated", "fadeInRight"); 
 }
 
 
