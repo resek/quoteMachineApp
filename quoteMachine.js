@@ -41,22 +41,3 @@ function changeColor () {
     quoteButton.style.color = colors[random];
     twitterButton.style.color = colors[random];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
