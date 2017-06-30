@@ -4,6 +4,7 @@ var quote = document.getElementById("quote");
 var twitterButton = document.querySelector("a");
 var body = document.querySelector("body");
 var quoteAuthor = document.getElementById("quoteAuthor");
+var buttons = document.getElementById("buttons");
 var newQuote;
 var newAuthor;
 var random;
@@ -40,4 +41,5 @@ function changeColor () {
     quoteAuthor.style.background = colors[random];
     quoteButton.style.color = colors[random];
     twitterButton.style.color = colors[random];
+    buttons.style.background = colors[random];
 }

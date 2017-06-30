@@ -1,12 +1,12 @@
 body {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Zilla Slab', serif;
     background-color: #444444;
     -webkit-transition: background-color 0.5s;
     transition: background-color 0.5s;
 }
 
 p {
-    font-size: 230%;    
+    font-size: 250%;    
     color: white;
 }
 
@@ -22,12 +22,7 @@ button {
     transition: background-color 0.3s, color 0.3s;
     outline: none;
     margin-right: 15px;
-}
-
-button:hover {
-    background-color: #e67e22;
-    color: white !important;
-    
+    font-family: 'Zilla Slab', serif;
 }
 
 #buttons a {
@@ -42,11 +37,6 @@ button:hover {
     color: #444444;
 }
 
-#buttons a:hover {
-    background-color: #e67e22;
-    color: white !important;
-}
-
 #quoteAuthor {
     width: 700px;
     height: auto;
@@ -58,7 +48,7 @@ button:hover {
 }
 
 #author {
-    font-size: 150%;
+    font-size: 170%;
     text-align: right;
     font-style: italic;
 }
@@ -67,23 +57,41 @@ button:hover {
     margin-top: 80px;
 }
 
+#buttons {
+    background-color: #444444;
+    transition: background-color 0.5s;
+}
+
 .animated {
     -webkit-animation-duration: 1.2s;
             animation-duration: 1.2s;
 }
 
+@media only screen and (min-width: 993px) {
+    button:hover {
+        background-color: #e67e22;
+        color: white !important;    
+    }
+    #buttons a:hover {
+        background-color: #e67e22;
+        color: white !important;
+    }
+}
+
 @media only screen and (max-width: 992px) {
-    p { font-size: 200%; }
+    p { font-size: 220%; }
     #quote { margin-top: 50px; }    
-    #author { font-size: 130%; }
+    #author { font-size: 150%; }
     #quoteAuthor { 
-    width: 550px;    
-    margin: 50px auto 30px;   
-    }    
+        width: 550px;    
+        margin: 50px auto 30px;   
+    }
+    button { color: #444444 !important; }
+    #buttons a { color: #444444 !important};
 }
 
 @media only screen and (max-width: 600px) {
-    p { font-size: 180%; }
+    p { font-size: 200%; }
     #quoteAuthor { max-width: 90%; }    
-    #author { font-size: 120%; }  
+    #author { font-size: 140%; }  
 }
