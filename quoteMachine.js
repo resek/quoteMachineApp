@@ -4,6 +4,7 @@ var quote = document.getElementById("quote");
 var body = document.querySelector("body");
 var quoteAuthor = document.getElementById("quoteAuthor");
 var buttons = document.getElementById("buttons");
+var twitterButton = document.querySelector("a");
 var newQuote;
 var newAuthor;
 var random;
@@ -20,8 +21,12 @@ function newQuoteRequest() {
             responseObject = JSON.parse(xhr.responseText);        
             newQuote = responseObject.quote.body;
             newAuthor = responseObject.quote.author;                              
+        }        
+        if (newQuote.length > 220) {
+            quote.innerHTML = ("\"" + newQuote + "\"").substring(0, 220) + " ...";
+        } else {
+            quote.innerHTML = "\"" + newQuote + "\"";
         }
-        quote.innerHTML = "\"" + newQuote + "\"";
         author.innerHTML = newAuthor;
         quote.classList.toggle("fadeInLeft");
         quote.classList.toggle("fadeInRight");
